@@ -3,13 +3,22 @@
 This project tries to reconstruct a web page from Tecnogallery company. Using similar stetical design with flexbox and Grid.
 
 FONTS: 'Roboto Condensed',sans-serif;
-MAIN COLOR: #0038A8
 
 ## CONTENT
 
 **Name company** TECNOGALLERY
 
-## section:
+### header/nav:
+
+-TECNOGALLERY
+-SERVICIOS
+-TIENDAS
+-¡FRANQUÍCIATE!
+-NOTICIAS
+-CONTACTO
+-BOLSA DE TRABAJO
+
+### section:
 
 **Company Description**
 
@@ -21,7 +30,7 @@ TecnoGallery dispone de 24 puntos de venta repartidos por toda España (Valencia
 
 Además, contamos con nuestro Compromiso TecnoGallery, con el que redondeamos nuestra atención al cliente ofreciéndote tres servicios exclusivos: la migración de datos cuando compras un móvil con nosotros; la instalación del cristal templado que acabes de adquirir en una de nuestras tiendas; y nuestro servicio de reparación de móviles y tablets rápido, eficaz y con componentes de calidad.
 
-## banners:
+### banners:
 
 - Catálogo de fundas:
 
@@ -39,17 +48,17 @@ Además, contamos con nuestro Compromiso TecnoGallery, con el que redondeamos nu
 
   ¡Busca tu tienda TecnoGallery más cercana!
 
-## section:
+### section:
 
 **GRAN VARIEDAD DE ACCESORIOS**
 
 Disponemos de accesorios para iPhone, Samsung, LG, Sony, Xiaomi, Huawei, Alcatel, Nexus...
 
-## section:
+### section:
 
 **NUESTRAS TIENDAS**
 
-## section:
+### section:
 
 **ÚLTIMAS NOTICIAS**
 
@@ -65,7 +74,7 @@ Disponemos de accesorios para iPhone, Samsung, LG, Sony, Xiaomi, Huawei, Alcatel
 - XIAOMI MI 11
   Xiaomi vuelve a dejarnos boquiabiertos con su nuevo smartphone Xiaomi Mi 11. Un móvil que destaca por su diseño, su procesador y su resolución, entre otros.
 
-## footer
+### footer
 
 POLíTICA DE 'COOKIES'
 AVISO LEGAL
@@ -76,3 +85,34 @@ SÍGUENOS
 
 CONTÁCTANOS
 info@tecnogallery.com
+
+# Design
+
+** Plain/Neutral-startup**
+
+- sans-serif and medium sized headings
+- Blues and blacks / light backgrounds & gradients
+- Images in a small format
+- simple icons
+- a little of shadows & glows
+- a few border-radius
+- boxes layouts
+
+## fonts:
+
+font-family: 'Roboto', sans-serif;
+weight: 400, 500, 700
+
+## colors
+
+### main:
+
+main: #0038A8
+
+### shades:
+
+#000611 #001132 #001c54
+
+### tints:
+
+#e6ebf6 #ccd7ee #b3c3e5
