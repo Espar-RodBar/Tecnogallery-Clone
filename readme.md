@@ -2,8 +2,6 @@
 
 This project tries to reconstruct a web page from Tecnogallery company. Using similar stetical design with flexbox and Grid.
 
-FONTS: 'Roboto Condensed',sans-serif;
-
 ## CONTENT
 
 **Name company** TECNOGALLERY
@@ -18,6 +16,8 @@ FONTS: 'Roboto Condensed',sans-serif;
 -CONTACTO
 -BOLSA DE TRABAJO
 
+-TIENDA
+
 ### section:
 
 **Company Description**
@@ -30,7 +30,7 @@ TecnoGallery dispone de 24 puntos de venta repartidos por toda España (Valencia
 
 Además, contamos con nuestro Compromiso TecnoGallery, con el que redondeamos nuestra atención al cliente ofreciéndote tres servicios exclusivos: la migración de datos cuando compras un móvil con nosotros; la instalación del cristal templado que acabes de adquirir en una de nuestras tiendas; y nuestro servicio de reparación de móviles y tablets rápido, eficaz y con componentes de calidad.
 
-### banners:
+### banners/hero:
 
 - Catálogo de fundas:
 
@@ -98,21 +98,51 @@ info@tecnogallery.com
 - a few border-radius
 - boxes layouts
 
-## fonts:
+## 01 TYPOGRAPHY SYSTEM
+
+### FONT SIZE SYSTEM (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 font-family: 'Roboto', sans-serif;
-weight: 400, 500, 700
 
-## colors
+- font weight:
+  default: 400
+  medium: 500
+  bold: 700
 
-### main:
+- line height:
+  default: 1
+  small: 1.05
+  paragraph default: 1.6
+  large 1.8
 
-main: #0038A8
+- Letter spacing
+  -0.5px
+  0.75px
 
-### shades:
+## 02 COLORS:
 
-#000611 #001132 #001c54
+### Primary:
 
-### tints:
+#0038A8
 
-#e6ebf6 #ccd7ee #b3c3e5
+- Tints:
+  #e6ebf6 #ccd7ee #b3c3e5
+- Shades:
+  #000611 001132# #001c54 #002d86
+- Accents:
+- greys:
+  #555 #333
+
+--- 05 shadows
+
+--- 06 Border-radius
+default: 9px
+
+--- 07 White-space
+
+- SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+\*/

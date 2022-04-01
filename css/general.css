@@ -1,0 +1,47 @@
+/*
+ - FONT SIZE
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+  
+  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ********* GRID LAYOUTS ************ */
+.grid {
+  display: grid;
+}
+
+.grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-hero {
+  grid-template-columns: 1fr 1fr;
+}
+
+/*********** Helper clases *************/
+.hide {
+  display: none;
+}
+.unhide {
+  display: block;
+}
