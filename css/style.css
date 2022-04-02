@@ -7,6 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 4.8rem;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .logo {
@@ -52,16 +58,42 @@
 }
 
 /* ******************************************
-**  HERO
+**  HERO - carousel
 ****************************************** */
 .section-hero {
-  padding: 9.6rem 0;
-  background-color: #e6ebf6;
+  padding: 4.8rem 0 9.6rem;
+  background-color: #001132;
 }
 .hero-item {
-  width: 100%;
-  height: 30rem;
+  width: auto;
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+  grid-template-columns: 1fr 2fr;
+  display: grid;
 }
+.hero-item-text-box {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 17, 50, 0.89) 0%,
+    rgba(255, 255, 255, 0) 95%
+  );
+
+  display: flex;
+  gap: 3.2rem;
+  flex-direction: column;
+  padding: 3.2rem 6.4rem;
+}
+
+.hero-item-text-box .secondary-header {
+  color: #fff;
+}
+.hero-item-text-box p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
 .hero-tiendas {
   background-image: url(../img/banner/banner-tecnogallery-tiendas.jpg);
 }
@@ -76,4 +108,23 @@
 }
 .hero-accesorios {
   background-image: url(../img/banner/banner-tecnogallery-accesorios.jpg);
+}
+
+.hero-icons {
+  padding: 8rem 0;
+  display: flex;
+  gap: 4.8rem;
+  justify-content: center;
+}
+.hero-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+/* ******************************************
+**  Nosotros
+****************************************** */
+.section-nosotros {
+  color: #fff;
+  background-color: #001132;
+  padding: 9.6rem 0;
 }

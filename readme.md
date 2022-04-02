@@ -118,6 +118,7 @@ font-family: 'Roboto', sans-serif;
   large 1.8
 
 - Letter spacing
+  -1px
   -0.5px
   0.75px
 
@@ -130,7 +131,7 @@ font-family: 'Roboto', sans-serif;
 - Tints:
   #e6ebf6 #ccd7ee #b3c3e5
 - Shades:
-  #000611 001132# #001c54 #002d86
+  #000611 #001132 #001c54 #002d86
 - Accents:
 - greys:
   #555 #333
