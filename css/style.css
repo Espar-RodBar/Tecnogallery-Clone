@@ -7,6 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.5);
+
   position: fixed;
   width: 100%;
   height: 4.8rem;
@@ -130,12 +132,22 @@
 }
 
 .primary-header {
-  margin-bottom: 4.8rem;
+  margin-bottom: 12.8rem;
   text-align: center;
 }
 
+.section-nosotros .grid {
+  row-gap: 3.2rem;
+}
+
 .nosotros-text-box {
-  padding: 3.2rem;
+  /* padding: 3.2rem; */
+}
+
+.nosotros-text-header {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
 }
 
 .nosotros-text {
@@ -145,11 +157,7 @@
 }
 
 .nosotros-text:last-of-type {
-  margin-bottom: 1.8rem;
-}
-
-.nosotros-lists {
-  /* list-style: none; */
+  margin-bottom: 1.6rem;
 }
 
 .nosotros-lists-item {
@@ -158,10 +166,85 @@
 }
 
 .nosotros-img-box {
-  margin: 2.4rem;
+  overflow: hidden;
+  border-radius: 9px;
 }
 
 .nosotros-img {
   width: 100%;
   border-radius: 9px;
+
+  transition: all 0.5s;
+}
+.nosotros-img:hover {
+  transform: scale(1.1);
+}
+
+/* ******************************************
+**  Tiendas
+****************************************** */
+.section-tiendas {
+  padding: 9.6rem 0 9.6rem;
+  background-color: #e6ebf6;
+}
+
+.section-tiendas .secondary-header {
+  margin-bottom: 6.4rem;
+  text-align: center;
+  color: #001c54;
+}
+.tiendas-flex {
+  margin: 0 6.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.tienda-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem 3.6rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  border-top: 1px solid #ccd7ee;
+  transition: all 0.5s;
+}
+
+.tienda:nth-child(odd) .tienda-header {
+  background-color: #0038a8;
+}
+.tienda:nth-child(even) .tienda-header {
+  background-color: #001c54;
+}
+
+.tienda .tienda-header:hover {
+  color: #001c54;
+  background-color: #e6ebf6;
+}
+
+.tienda-arrow-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  /* color: #001c54; */
+}
+
+.tienda-description-box {
+  margin-bottom: 3.2rem;
+}
+
+.tienda-description {
+  row-gap: 1.8rem !important;
+}
+
+.tienda-description p {
+  padding: 3.2rem 1.6rem;
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  line-height: 2;
+  text-align: center;
+}
+
+.tienda-description iframe,
+.tienda-description img {
+  border-radius: 9px;
+  height: 100%;
 }
