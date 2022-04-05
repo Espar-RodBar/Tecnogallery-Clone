@@ -23,7 +23,7 @@
 
 .nav-bar-list {
   display: flex;
-  gap: 2.4rem;
+  gap: 1.6rem;
   list-style: none;
 }
 
@@ -138,6 +138,7 @@
 
 .section-nosotros .grid {
   row-gap: 3.2rem;
+  column-gap: 6.4rem;
 }
 
 .nosotros-text-box {
@@ -193,20 +194,34 @@
   text-align: center;
   color: #001c54;
 }
-.tiendas-flex {
+.tiendas-grid {
   margin: 0 6.4rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.8rem;
 }
+
+.tienda {
+  background-color: #fff;
+  border-radius: 11px;
+  gap: 1.8rem;
+  transition: all 0.5s;
+
+  position: relative;
+}
+
 .tienda-header {
   display: flex;
   justify-content: space-between;
   padding: 1.8rem 3.6rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #fff;
   border-top: 1px solid #ccd7ee;
   transition: all 0.5s;
+
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
 }
 
 .tienda:nth-child(odd) .tienda-header {
@@ -216,9 +231,14 @@
   background-color: #001c54;
 }
 
-.tienda .tienda-header:hover {
+.tienda:hover .tienda-header {
   color: #001c54;
-  background-color: #e6ebf6;
+  background-color: #fff;
+}
+
+.tienda:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 1.6rem 3.2rem rgba(0, 17, 50, 0.047);
 }
 
 .tienda-arrow-icon {
@@ -237,14 +257,31 @@
 
 .tienda-description p {
   padding: 3.2rem 1.6rem;
-  grid-column: 1 / -1;
-  font-size: 2rem;
-  line-height: 2;
-  text-align: center;
+
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
-.tienda-description iframe,
+.tienda-description iframe {
+  border-radius: 18px;
+  width: 12rem;
+  height: 12rem;
+
+  box-shadow: 0 1.2rem 1.8rem rgba(0, 17, 50, 0.137);
+
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  /* transform: translateY(-50%); */
+}
 .tienda-description img {
-  border-radius: 9px;
-  height: 100%;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  width: 100%;
+}
+
+.tienda-description p {
+  grid-column: span 2;
 }
