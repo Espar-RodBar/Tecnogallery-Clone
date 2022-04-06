@@ -198,11 +198,13 @@
   margin: 0 6.4rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.8rem;
+  column-gap: 1.8rem;
+  row-gap: 3rem;
 }
 
 .tienda {
   background-color: #fff;
+
   border-radius: 11px;
   gap: 1.8rem;
   transition: all 0.5s;
@@ -237,7 +239,7 @@
 }
 
 .tienda:hover {
-  transform: translateY(-5px);
+  transform: translateY(-1rem);
   box-shadow: 0 5px 1.6rem 3.2rem rgba(0, 17, 50, 0.047);
 }
 
@@ -248,7 +250,7 @@
 }
 
 .tienda-description-box {
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
 }
 
 .tienda-description {
@@ -256,7 +258,7 @@
 }
 
 .tienda-description p {
-  padding: 3.2rem 1.6rem;
+  padding: 1.6rem;
 
   font-size: 1.4rem;
   line-height: 1.4;
@@ -277,11 +279,82 @@
 .tienda-description img {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
-  border-bottom-right-radius: 11px;
-  border-bottom-left-radius: 11px;
+
   width: 100%;
 }
 
 .tienda-description p {
   grid-column: span 2;
+}
+
+/* ******************************************
+**  Noticias
+****************************************** */
+.section-noticias {
+  padding: 9.6rem 0;
+  background-color: #001132;
+}
+
+.section-noticias .secondary-header {
+  margin-bottom: 6.4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.noticias-box {
+  gap: 3.6rem;
+}
+
+.noticias-card {
+  background-color: #e6ebf6;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.noticias-card:hover {
+  cursor: pointer;
+}
+
+.noticias-img {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  width: 100%;
+}
+.noticias-title {
+  border-top: 1px solid #001132;
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.noticias-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.new-news {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+
+  position: relative;
+}
+
+.new-news::after {
+  content: "new news!";
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ffd43b;
+  padding: 0.8rem 5rem;
+
+  position: absolute;
+  top: 4.8rem;
+  right: -4.8rem;
+
+  transform: rotate(45deg);
 }
