@@ -349,7 +349,8 @@
   font-size: 2.4rem;
   font-weight: 500;
   color: #fff;
-  background-color: #ffd43b;
+  /* background-color: #a07f0a; */
+  background-image: radial-gradient(circle at 50%, #ffd43b 65%, #a07f0a);
   padding: 0.8rem 5rem;
 
   position: absolute;
