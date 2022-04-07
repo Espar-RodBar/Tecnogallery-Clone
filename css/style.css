@@ -359,3 +359,104 @@
 
   transform: rotate(45deg);
 }
+
+/* ******************************************
+**  Franquicias
+****************************************** */
+.section-franquicias {
+  padding: 9.6rem 0;
+}
+
+.franquicias-box-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 6.4rem;
+}
+
+.section-franquicias .secondary-header {
+  text-align: center;
+  color: #001132;
+  margin-bottom: 3.2rem;
+}
+
+.section-franquicias .tertiary-header {
+  text-align: center;
+  color: #001132;
+  margin-bottom: 3.2rem;
+}
+
+.section-franquicias .quaternary-header {
+  margin-top: 2.4rem;
+}
+
+.franquicias-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.franquicias-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2.4rem;
+}
+
+.franquicias-item-img {
+  width: 100%;
+}
+
+.franquicias-item-header {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.franquicias-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.franquicias-cta-grid {
+  background-color: #001132;
+  overflow: hidden;
+  border-radius: 11px;
+
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.franquicias-cta-grid .tertiary-header {
+  color: #fff;
+}
+.cta-text-box {
+  padding: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.franquicias-cta-text {
+  margin-bottom: 2.4rem;
+}
+
+.cta-button {
+  grid-column: 1 / -1;
+  font-size: 2.2rem;
+  font-weight: 500;
+  justify-self: center;
+  padding: 1.8rem 3.6rem;
+  background-color: #a07f0a;
+  border-radius: 2.5rem;
+
+  transition: all 0.3s;
+}
+.cta-button:hover {
+  background-color: #ffd43b;
+  color: #000611;
+}
+
+.franquicias-cta-img {
+  background-image: url(../img/franquicias/franquicias\ CTA.jpg);
+  background-size: cover;
+  background-position: center;
+}
