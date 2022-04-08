@@ -460,3 +460,84 @@
   background-size: cover;
   background-position: center;
 }
+
+/* ******************************************
+**  Contact
+****************************************** */
+.section-contacto {
+  padding: 9.6rem 0;
+  background-color: #0038a8;
+}
+
+.contact-box {
+  background-color: #fff;
+  padding: 3.2rem 4.8rem;
+  border-radius: 11px;
+}
+
+.contact-box .secondary-header {
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 2.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.form-box-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.4rem;
+  column-gap: 2.4rem;
+}
+
+.contact-box .grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box label {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.contact-box input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #e6ebf6;
+  border: 1px solid transparent;
+  border-radius: 9px;
+}
+
+.contact-box input:focus {
+  outline: 1px solid #0038a8;
+}
+
+.form-button-send {
+  margin-top: 2.4rem;
+
+  grid-column: 1/-1;
+  justify-self: center;
+  padding: 1.8rem 3.6rem;
+  border-radius: 2.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #001132;
+  color: #fff;
+
+  transition: all 0.3s;
+}
+
+.form-button-send:hover {
+  background-color: #001c54;
+}
+
+.form-button-send:active {
+  background-color: #0038a8;
+}
