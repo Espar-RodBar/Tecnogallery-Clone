@@ -128,7 +128,7 @@
 .section-nosotros {
   color: #fff;
   background-color: #001132;
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12.8rem;
 }
 
 .primary-header {
@@ -185,12 +185,12 @@
 **  Tiendas
 ****************************************** */
 .section-tiendas {
-  padding: 9.6rem 0 9.6rem;
+  padding: 12.8rem 0;
   background-color: #e6ebf6;
 }
 
 .section-tiendas .secondary-header {
-  margin-bottom: 6.4rem;
+  margin-bottom: 9.6rem;
   text-align: center;
   color: #001c54;
 }
@@ -291,12 +291,12 @@
 **  Noticias
 ****************************************** */
 .section-noticias {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
   background-color: #001132;
 }
 
 .section-noticias .secondary-header {
-  margin-bottom: 6.4rem;
+  margin-bottom: 9.6rem;
   text-align: center;
   color: #fff;
 }
@@ -364,7 +364,7 @@
 **  Franquicias
 ****************************************** */
 .section-franquicias {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
 }
 
 .franquicias-box-flex {
@@ -417,6 +417,8 @@
 }
 
 .franquicias-cta-grid {
+  margin-top: 9.6rem;
+
   background-color: #001132;
   overflow: hidden;
   border-radius: 11px;
@@ -465,7 +467,7 @@
 **  Contact
 ****************************************** */
 .section-contacto {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
   background-color: #0038a8;
 }
 
@@ -540,4 +542,62 @@
 
 .form-button-send:active {
   background-color: #0038a8;
+}
+
+/* ******************************************
+**  footer
+****************************************** */
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: #001132;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.footer-nav-list li {
+  color: #fff;
+}
+.footer-nav-list a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-nav-list a:link,
+.footer-nav-list a:visited {
+}
+
+.footer-nav-list a:hover,
+.footer-nav-list a:active {
+  color: #e6ebf6;
+}
+
+.footer-media-box .secondary-header {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+
+.footer-icon {
+  width: 5rem;
+  height: 5rem;
+  fill: #fff;
+  margin-right: 2.4rem;
+}
+
+.footer-icon:hover {
+  cursor: pointer;
+  fill: #e6ebf6;
 }
