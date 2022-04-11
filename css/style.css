@@ -63,6 +63,7 @@
 **  HERO - carousel
 ****************************************** */
 .section-hero {
+  position: relative;
   padding: 4.8rem 0 9.6rem;
   background-color: #001132;
 }
@@ -122,6 +123,24 @@
   width: 4.8rem;
   height: 4.8rem;
 }
+
+.hero-carrousel-nav {
+  position: absolute;
+  top: 55vh;
+  right: 50%;
+  transform: translateX(50%);
+
+  display: flex;
+  gap: 0.8rem;
+}
+
+.hero-carrousel-item {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
 /* ******************************************
 **  Nosotros
 ****************************************** */
