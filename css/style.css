@@ -138,7 +138,18 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: aqua;
+  background-color: #b3c3e5;
+  /* border: 1px solid #001c54; */
+}
+.hero-carrousel-item:hover {
+  cursor: pointer;
+  background-color: #0038a8;
+  border: 1px solid #0038a8;
+}
+
+.hero-carrousel-active {
+  background-color: #e6ebf6;
+  border: 1px solid #0038a8;
 }
 
 /* ******************************************
@@ -273,12 +284,12 @@
 }
 
 .tienda-description {
-  row-gap: 1.8rem !important;
+  row-gap: 1.8rem;
 }
 
 .tienda-description p {
-  padding: 1.6rem;
-
+  padding: 1.6rem 3.2rem;
+  grid-column: span 2;
   font-size: 1.4rem;
   line-height: 1.4;
 }
@@ -300,10 +311,6 @@
   grid-column: 1 / -1;
 
   width: 100%;
-}
-
-.tienda-description p {
-  grid-column: span 2;
 }
 
 /* ******************************************

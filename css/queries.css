@@ -1,0 +1,68 @@
+/********************************************
+   1680px (smaller resolutions desktop
+********************************************/
+@media (max-width: 105em) {
+  .tiendas-grid {
+    margin: 0 3.2rem;
+  }
+
+  .tienda-description p {
+    padding: 1.6rem 3.2rem 1.6rem 1.8rem;
+  }
+}
+
+/********************************************
+   1550px (smaller resolutions desktop
+********************************************/
+@media (max-width: 97em) {
+  .secondary-header {
+    font-size: 5.2rem;
+  }
+
+  .tiendas-grid {
+    margin: 0 2.4rem;
+  }
+
+  .tienda-description p {
+    padding: 1.6rem;
+    grid-column: 1 /-1;
+  }
+
+  .tienda-description iframe {
+    width: 10rem;
+    height: 10rem;
+
+    top: 41%;
+  }
+}
+
+/********************************************
+   1300px (smallest resolutions desktop
+********************************************/
+@media (max-width: 81em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/***********************************************
+ 1200px tablets
+ **************************************************/
+@media (max-width: 75em) {
+  .tiendas-grid {
+    max-width: 120rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.2rem;
+    column-gap: 3.2rem;
+  }
+  .tienda-description p {
+    grid-column: 1 / 3;
+  }
+
+  .tienda-description iframe {
+    width: 16rem;
+    height: 16rem;
+    top: 65%;
+  }
+}
