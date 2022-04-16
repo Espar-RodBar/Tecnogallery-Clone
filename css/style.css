@@ -107,6 +107,7 @@ MOBILE NAV BUTTON
   display: flex;
   gap: 3.2rem;
   flex-direction: column;
+  justify-content: center;
   padding: 3.2rem 6.4rem;
 }
 
@@ -195,6 +196,9 @@ MOBILE NAV BUTTON
 
 .nosotros-text-box {
   /* padding: 3.2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nosotros-text-header {
@@ -221,6 +225,8 @@ MOBILE NAV BUTTON
 .nosotros-img-box {
   overflow: hidden;
   border-radius: 9px;
+  display: flex;
+  align-items: center;
 }
 
 .nosotros-img {
@@ -278,7 +284,7 @@ MOBILE NAV BUTTON
   border-top-right-radius: 11px;
 }
 
-.tienda:nth-child(odd) .tienda-header {
+.tienda .tienda-header {
   background-color: #0038a8;
 }
 .tienda:nth-child(even) .tienda-header {
@@ -489,9 +495,13 @@ MOBILE NAV BUTTON
 .franquicias-cta-text {
   margin-bottom: 2.4rem;
 }
+.cta-div-btn {
+  display: flex;
+  justify-content: center;
+}
 
 .cta-button {
-  grid-column: 1 / -1;
+  display: block;
   text-align: center;
   font-size: 2.2rem;
   font-weight: 500;
@@ -502,7 +512,15 @@ MOBILE NAV BUTTON
 
   transition: all 0.3s;
 }
-.cta-button:hover {
+
+.cta-button:link,
+.cta-button:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta-button:hover,
+.cta-button:active {
   background-color: #ffd43b;
   color: #000611;
 }
