@@ -94,7 +94,7 @@ MOBILE NAV BUTTON
   height: 55vh;
   background-size: cover;
   background-position: center;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 2fr;
 }
 .hero-item-text-box {

@@ -75,11 +75,9 @@ body {
 }
 
 /*********** Helper clases *************/
-.hide {
-  display: none;
-}
-.unhide {
-  display: block;
+
+.unhide-hero {
+  display: grid;
 }
 .container {
   max-width: 120rem;
