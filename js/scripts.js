@@ -2,20 +2,29 @@
 
 const HERO_NAV_ACT_CLASS = "hero-carrousel-active";
 const HERO_ITEM_ACT_CLASS = "unhide-hero";
+const heroArray = document.getElementsByClassName("hero-item");
+const heroNavArray = document.getElementsByClassName("hero-carrousel-item");
+
+const menuBtn = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+menuBtn.addEventListener("click", () => headerEl.classList.toggle("nav-open"));
 
 const maxIndex = 5;
 
 let lastIndex = 4;
 let newIndex = 0;
 
-function slideHero(heroElementClass, heroNavClass) {
-  const heroArray = document.getElementsByClassName(heroElementClass);
-  const heroNavArray = document.getElementsByClassName(heroNavClass);
+for (let i = 0; i < heroNavArray.length; i++) {
+  heroNavArray[i].addEventListener("click", navArrayHandler.bind(this, i));
+}
 
-  console.log(heroArray[lastIndex], heroNavArray[lastIndex]);
+function navArrayHandler(index) {
+  slideHero(index);
+}
 
-  newIndex = (newIndex + 1) % 5;
-  console.log(newIndex, lastIndex);
+function slideHero(index = "") {
+  newIndex = !index ? (newIndex + 1) % 5 : index;
 
   heroArray[lastIndex].classList.toggle(HERO_ITEM_ACT_CLASS);
   heroArray[newIndex].classList.toggle(HERO_ITEM_ACT_CLASS);
@@ -26,4 +35,4 @@ function slideHero(heroElementClass, heroNavClass) {
   lastIndex = newIndex;
 }
 
-setInterval(slideHero.bind(this, "hero-item", "hero-carrousel-item"), 10000);
+setInterval(slideHero, 10000);
