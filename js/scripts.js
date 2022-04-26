@@ -10,12 +10,12 @@ const headerEl = document.querySelector(".header");
 
 menuBtn.addEventListener("click", () => headerEl.classList.toggle("nav-open"));
 
-const maxIndex = 5;
+const maxIndex = heroNavArray.length;
 
 let lastIndex = 4;
 let newIndex = 0;
 
-for (let i = 0; i < heroNavArray.length; i++) {
+for (let i = 0; i < maxIndex; i++) {
   heroNavArray[i].addEventListener("click", navArrayHandler.bind(this, i));
 }
 
@@ -24,7 +24,8 @@ function navArrayHandler(index) {
 }
 
 function slideHero(index = "") {
-  newIndex = !index ? (newIndex + 1) % 5 : index;
+  newIndex = index === "" ? (newIndex + 1) % 5 : index;
+  console.log(newIndex);
 
   heroArray[lastIndex].classList.toggle(HERO_ITEM_ACT_CLASS);
   heroArray[newIndex].classList.toggle(HERO_ITEM_ACT_CLASS);

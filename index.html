@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="tienda de moviles libres, tablets y accesorios. Reparaciones. Fundas personalizadas y seguros para teléfonos y tablets"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +24,7 @@
   <body>
     <!-- <header class="header nav-open"> -->
     <header class="header">
-      <a hred="#">
+      <a href="#hero">
         <img
           class="logo"
           src="img/logo/white-logo.png"
@@ -29,13 +33,15 @@
       </a>
       <div class="nav-bar-main">
         <ul class="nav-bar-list">
-          <li class="nav-bar-item"><a href="#">Nosotros</a></li>
-          <li class="nav-bar-item"><a href="#">Servicios</a></li>
-          <li class="nav-bar-item"><a href="#">tiendas</a></li>
-          <li class="nav-bar-item"><a href="#">¡Franquiciate!</a></li>
-          <li class="nav-bar-item"><a href="#">Noticias</a></li>
+          <li class="nav-bar-item"><a href="#nosotros">Nosotros</a></li>
 
-          <li class="nav-bar-item"><a href="#">Contacto</a></li>
+          <li class="nav-bar-item"><a href="#tiendas">tiendas</a></li>
+          <li class="nav-bar-item"><a href="#noticias">Noticias</a></li>
+          <li class="nav-bar-item">
+            <a href="#franquicias">¡Franquiciate!</a>
+          </li>
+
+          <li class="nav-bar-item"><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="btn-online-shop">TIENDA</div>
@@ -116,7 +122,7 @@
       </button>
     </header>
     <body>
-      <section class="section-hero">
+      <section class="section-hero" id="hero">
         <div class="hero-carrousel-nav">
           <div class="hero-carrousel-item item1"></div>
           <div class="hero-carrousel-item item2"></div>
@@ -244,7 +250,7 @@
         </div>
       </section>
 
-      <section class="section-nosotros">
+      <section class="section-nosotros" id="nosotros">
         <div class="container">
           <h1 class="primary-header">
             Especialistas en moviles libres, tablets y accesorios!
@@ -331,7 +337,7 @@
       </section>
 
       <!-- TIENDAS -->
-      <section class="section-tiendas">
+      <section class="section-tiendas" id="tiendas">
         <div class="container">
           <h2 class="secondary-header">Nuestras tiendas</h2>
         </div>
@@ -746,7 +752,7 @@
         </div>
       </section>
 
-      <section class="section-noticias">
+      <section class="section-noticias" id="noticias">
         <div class="container">
           <h2 class="secondary-header">Noticias</h2>
           <div class="noticias-box grid grid-4-columns">
@@ -842,7 +848,7 @@
       </section>
 
       <!-- franquicias -->
-      <section class="section-franquicias">
+      <section class="section-franquicias" id="franquicias">
         <div class="container">
           <div class="franquicias-box-flex">
             <h2 class="secondary-header">Concepto TecnoGallery</h2>
@@ -946,7 +952,8 @@
           </div>
         </div>
       </section>
-      <section class="section-contacto">
+
+      <section class="section-contacto" id="contacto">
         <div class="container">
           <div class="contact-box">
             <h2 class="secondary-header">Formulario de contacto</h2>
@@ -990,6 +997,7 @@
         </div>
       </section>
     </body>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
